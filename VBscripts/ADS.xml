@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Advertisements>
+
+  <Ad>
+    <ImageUrl>masterimg/ad1.jpg</ImageUrl>
+    <NavigateUrl>www.e-learningstudios.com</NavigateUrl>
+    <AlternateText>e-learning studio</AlternateText>
+    <Impressions>80</Impressions>
+    <Keyword>Topic1</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>masterimg/ad2.jpg</ImageUrl>
+    <NavigateUrl>www.saffroninteractive.com</NavigateUrl>
+    <AlternateText>saffron</AlternateText>
+    <Impressions>80</Impressions>
+    <Keyword>Topic2</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>masterimg/ad3.jpg</ImageUrl>
+    <NavigateUrl>www.pktlearning.com</NavigateUrl>
+    <AlternateText>ptk-learning</AlternateText>
+    <Impressions>80</Impressions>
+    <Keyword>Topic3</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>masterimg/ad4.jpg</ImageUrl>
+    <NavigateUrl>www.i-ed.co.uk</NavigateUrl>
+    <AlternateText>ied</AlternateText>
+    <Impressions>80</Impressions>
+    <Keyword>Topic5</Keyword>
+  </Ad>
+
+  <Ad>
+    <ImageUrl>masterimg/ad5.png</ImageUrl>
+    <NavigateUrl>www.xoolon.com</NavigateUrl>
+    <AlternateText>xoolon</AlternateText>
+    <Impressions>80</Impressions>
+    <Keyword>Topic5</Keyword>
+  </Ad>
+ 
+</Advertisements>

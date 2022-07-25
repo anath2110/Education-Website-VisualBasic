@@ -1,0 +1,183 @@
+<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    
+    <style type="text/css">
+       
+        .style1
+        {
+            width: 44%;
+            border-collapse: collapse;
+        }
+        
+       
+        #form1
+        {
+            height: 690px;
+        }
+        
+         .label
+        {
+         background-color:Transparent;
+         font-family:Verdana;
+         font-size:x-small;
+         font-weight:bold;
+         color:#66CCFF;
+        }
+        .label1
+        {
+         background-color:Transparent;
+         font-family:forte;
+         font-size:medium;
+         font-weight:bold;
+      
+         color:#FFCC66;
+        }
+        .style2
+        {
+            width: 1076px;
+        }
+        .style3
+        {
+            width: 176px;
+        }
+    </style>
+    
+
+
+<script type="text/javascript" id="sothink_dhtmlmenu"> <!--
+ st_siteroot="file:///C|/Inetpub/wwwroot";
+ st_jspath="/EDUWEB/menu/stmenu.js";
+ if(!window.location.href.indexOf("file:") && st_jspath.charAt(0)=="/")
+  document.write('<script type="text/javascript" src="'+st_siteroot+st_jspath+'"><\/script>');
+ else 
+  document.write('<script type="text/javascript" src="'+st_jspath+'"><\/script>');
+//--> </script>
+</head>
+<body background="masterimg/B11.jpg">
+    <form id="form1" runat="server">
+    <div>
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <asp:Timer ID="Timertime" runat="server" Interval="1000" 
+            OnTick="Timertime_Tick">
+        </asp:Timer>
+        <table align="center" class="style1">
+            <tr>
+                <td colspan="3">
+                    <asp:Image ID="Image1" runat="server" Height="135px" 
+                        ImageUrl="~/masterimg/logo1.JPG" Width="1189px" />
+                </td>
+            </tr>
+            <tr>
+                <td align="left" colspan="3">
+                    <asp:Panel ID="Panel1" runat="server" Width="1192px" Height="22px">
+                        <asp:Label ID="Labeldate" runat="server" Height="16px" Width="244px" 
+                           CssClass="label"></asp:Label>
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        &nbsp;&nbsp; &nbsp;                        
+                            <asp:Label ID="Labelwelcome" runat="server" CssClass="label" Text="Welcome :" 
+                        Visible="False"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;<asp:Label ID="Labeluname" runat="server" CssClass="label" Visible="False"></asp:Label>
+                     &nbsp;&nbsp;<asp:LinkButton ID="LbLogin" runat="server" CssClass="label" 
+                         onclick="LbLogin_Click">Login</asp:LinkButton>
+                     </asp:Panel>
+
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                            <ContentTemplate>
+                                <asp:Label ID="Labeltime" runat="server" CssClass="label" Height="18px" 
+                                    Text=" " Width="102px"></asp:Label>
+                            </ContentTemplate>
+                            <Triggers>
+                                <asp:AsyncPostBackTrigger ControlID="Timertime" EventName="Tick" />
+                            </Triggers>
+                        </asp:UpdatePanel>
+
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="3">
+                   <a href="http://www.dhtml-menu-builder.com"  style="display:none;visibility:hidden;">Javascript DHTML Drop Down Menu Powered by dhtml-menu-builder.com</a>
+<script type="text/javascript">
+<!--
+stm_bm(["menu61b2",900,"/EDUWEB/menu","blank.gif",0,"","",0,0,250,0,1000,1,0,0,"","545",0,0,1,2,"hand","hand","file:///C|/Inetpub/wwwroot",1,25],this);
+stm_bp("p0",[0,4,0,0,0,0,18,7,100,"",-2,"",-2,50,0,0,"#799BD8","transparent","060420line.gif",3,0,0,"#000000","",-1,-1,0,"transparent","",0,"060420lineb.gif",-1,-1,0,"transparent","",0,"",-1,-1,0,"transparent","",0,"060420linea.gif",-1,-1,0,"transparent","",0,"","","","",20,20,20,20,20,20,20,20]);
+stm_ai("p0i0",[0,"Home","","",-1,-1,0,"Home.aspx","_self","","","060420icon.gif","060420icon1.gif",18,23,0,"","",0,0,0,0,1,"#FFFFF7",1,"#B5BED6",1,"","",2,3,0,0,"#FFFFF7","#000000","#FFFFFF","#FFFF00","bold 9pt Verdana","bold 9pt Verdana",0,0,"","","","",0,0,0],90,23);
+stm_aix("p0i1","p0i0",[0,"About  Us","","",-1,-1,0,"About Us.aspx","_self","","","060420icon.gif","060420icon1.gif",18,23,0,"","",0,0,0,0,1,"#FFFFF7",1,"#B5BED6",1,"","",3],90,23);
+stm_aix("p0i2","p0i1",[0,"Tutorials","","",-1,-1,0,"Tutorials.aspx","_self","","","060420icon.gif","060420icon1.gif",18,23,0,"","",0,0,0,0,1,"#FFFFF7",1,"#B5BED6",1,"","",3],90,23);
+stm_aix("p0i3","p0i1",[0,"Books","","",-1,-1,0,"Books.aspx","_self","","","060420icon.gif","060420icon1.gif",18,23,0,"","",0,0,0,0,1,"#FFFFF7",1,"#B5BED6",1,"","",3],90,23);
+stm_aix("p0i4","p0i1",[0,"Services  ","","",-1,-1,0,"","_self","","","060420icon.gif","060420icon1.gif",18,23,0,"arrow_r.gif","arrow_r.gif",7,7],90,23);
+stm_bp("p1",[1,4,0,0,0,0,18,0,100,"",-2,"",-2,50,0,0,"#799BD8","transparent","060420line.gif",3,0,0,"#000000"]);
+stm_aix("p1i0","p0i1",[0,"Uploads","","",-1,-1,0,"Uploads.aspx","_self","","","060420icon.gif","060420icon1.gif",18,23,0,"","",0,0,0,0,1,"#FFFFF7",1,"#B5BED6",1,"","",3],90,0);
+stm_aix("p1i1","p0i1",[0,"Downloads","","",-1,-1,0,"Downloads.aspx","_self","","","060420icon.gif","060420icon1.gif",18,23,0,"","",0,0,0,0,1,"#FFFFF7",1,"#B5BED6",1,"","",3],90,0);
+stm_ep();
+stm_aix("p0i5","p0i1",[0,"Test  Yourself   ","","",-1,-1,0,"Test.aspx","_self","","","060420icon.gif","060420icon1.gif",18,23,0,"","",0,0,0,0,1,"#FFFFF7",1,"#B5BED6",1,"","",3],100,23);
+stm_aix("p0i6","p0i1",[0,"Contact Us   ","","",-1,-1,0,"Contact.aspx","_self","","","060420icon.gif","060420icon1.gif",18,23,0,"","",0,0,0,0,1,"#FFFFF7",1,"#B5BED6",1,"","",3],90,23);
+stm_aix("p0i7","p0i1",[0,"Feedback","","",-1,-1,0,"Feedback.aspx","_self","","","060420icon.gif","060420icon1.gif",18,23,0,"","",0,0,0,0,1,"#FFFFF7",1,"#B5BED6",1,"","",3],90,23);
+stm_ep();
+stm_em();
+//-->
+</script>
+
+
+
+                </td>
+            </tr>
+            <tr><td class="style3">
+                        <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                            <ContentTemplate>
+                                <asp:AdRotator ID="AdRotator2" runat="server" AdvertisementFile="~/ADS.xml" 
+                        Height="350px" Width="175px" />
+                            </ContentTemplate>
+                    </asp:UpdatePanel>
+                        
+                    </td><td class="style2"><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                        </asp:ContentPlaceHolder></td><td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Labellatest" runat="server" Text="...VIEW  D  LATEST...." 
+                    CssClass="label1"></asp:Label>
+                        <br />
+                        <br />
+                           <marquee ID="MARQUEE2" behavior="scroll" bgcolor="transparent" 
+                        class="scrolling" direction="up" onMouseOut="this.start();" 
+                        onMouseOver="this.stop();" scrollamount="2" scrolldelay="60" 
+                        style="text-align: left; height: 307px; width: 176px;"><a class="scrolling" 
+                        href="Books.aspx" target="_self">
+                    <asp:Label ID="Labelmq21" runat="server" CssClass="label" Font-Size="Smaller" 
+                        ForeColor="BlueViolet" Text="Check out our Latest  Book  Collection  on ASP.NET !!!!!"></asp:Label>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <asp:Label ID="LabelMQ22" runat="server" CssClass="label" Font-Size="Smaller" 
+                        ForeColor="BlueViolet" Text="Special  Discount  offers  for  registered  memebers  only....HURRY!!!!!"></asp:Label>
+                    
+                    <br />
+                        <br /><br />
+                        <br />
+                        <asp:Label ID="Labelmq3" runat="server" CssClass="label" Font-Size="Smaller" 
+                        ForeColor="BlueViolet" Text="You  can  now  test  your  knowledge  on  each  subject  after  in  the  exclusive  Test  Yorself  section"></asp:Label>
+                    
+                        </a></marquee></td></tr>
+            
+            <tr><td align="center" colspan="3">
+                <asp:Panel ID="panel2" runat="server" Height="25px" Width="283px">
+                    <asp:LinkButton ID="LinkButtondsclmr" runat="server" CssClass="label">Disclaimer 
+                    |</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButtoncpyrt" runat="server" CssClass="label">Copyright @ 
+                    e-learning Centre2010</asp:LinkButton>
+                    <br />
+                    <asp:Label ID="Labeldsgn" runat="server" CssClass="label" 
+                        Text="Design Maintained by Anindita Nath"></asp:Label>
+                </asp:Panel>
+                </td></tr>
+            
+            </table>
+    </div>
+    </form>
+</body>
+</html>
